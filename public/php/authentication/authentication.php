@@ -1,16 +1,20 @@
 <?php
 include('../connection/connection.php');
 include('../process/adminsession.php');
+include('../../../app/http/Controllers/Controller.php');
+
+use App/Http/Controllers/Controller;
+
 $username = $_POST['user'];
 $password = $_POST['pass'];
 
-
+ 
 //to prevent from mysqli injection  
 $username = stripcslashes($username);
 $password = stripcslashes($password);
 $username = mysqli_real_escape_string($con, $username);
 $password = mysqli_real_escape_string($con, $password);
-
+/*
 //account search
 $sql = "select * from users where username = '$username' and password = '$password'";
 $result = mysqli_query($con, $sql);
@@ -64,7 +68,7 @@ else{
     echo $alert;
 }
 
-/*
+
 if ($count == 1) {
     if ($role[0] == 1) {
         session_start();
@@ -85,3 +89,10 @@ if ($count == 1) {
     echo $alert;
 }
 */
+//rewrite section
+//Database query start
+
+$sql = DB::select('select * from users where username = ? and password = ?', [$username, $password]);
+
+//pass values to controller testing
+authenticated($roleid, $count);
