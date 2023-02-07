@@ -3,7 +3,8 @@ include('../connection/connection.php');
 include('../process/adminsession.php');
 include('../../../app/http/Controllers/Controller.php');
 
-use App/Http/Controllers/Controller;
+
+use App\Http\Controllers\Controller;
 
 $username = $_POST['user'];
 $password = $_POST['pass'];
