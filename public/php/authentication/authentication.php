@@ -1,7 +1,5 @@
 <?php
-include('../connection/connection.php');
-include('../process/adminsession.php');
-include('../../../app/http/Controllers/Controller.php');
+
 
 
 use App\Http\Controllers\Controller;
@@ -13,8 +11,8 @@ $password = $_POST['pass'];
 //to prevent from mysqli injection  
 $username = stripcslashes($username);
 $password = stripcslashes($password);
-$username = mysqli_real_escape_string($con, $username);
-$password = mysqli_real_escape_string($con, $password);
+//$username = mysqli_real_escape_string($con, $username);
+//$password = mysqli_real_escape_string($con, $password);
 /*
 //account search
 $sql = "select * from users where username = '$username' and password = '$password'";
@@ -92,8 +90,11 @@ if ($count == 1) {
 */
 //rewrite section
 //Database query start
+//get values from database
+//query builder
+$resultcount = DB::select('select * from users where username = ? and password = ?', [$username, $password]);
 
-$sql = DB::select('select * from users where username = ? and password = ?', [$username, $password]);
+//
 
 //pass values to controller testing
 authenticated($roleid, $count);

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,10 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 //login
+/*
 Route::get('/', function () {
     return view('login');
 });
-
+*/
+Route::get('/',[UserController::class, 'index']);
+Route::post('/auth', [UserController::class, 'authenticated'])->name('login.authenticated');
 //admin section start
 
 Route::get('/admin/adminjobrequests', function () {
