@@ -36,7 +36,7 @@ class UserController extends Controller
             if ($rid == 1)
             {
                 //redirect to userdashboard
-                return view('admin/adminaccountss');
+                return view('user/userdashboard');
             }
 
             //to be added: Department Head,Sao,PCO
@@ -44,12 +44,14 @@ class UserController extends Controller
             {
                 //redirect to admin dashboard
                                     //test
-                return redirect('adminaccounts');
+                return redirect('admin/adminaccounts');
             }
             else
             {
                 //return to login page
                 return redirect('login');
+                $alert = "<script type='text/javascript'>alert('Login failed. Invalid username or password.');</script>";
+                echo $alert;
             }
         }
     }   
