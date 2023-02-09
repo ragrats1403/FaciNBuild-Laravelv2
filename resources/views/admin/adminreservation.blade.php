@@ -37,28 +37,28 @@
         <div class="navdiv">
             <ul class="nav_list">
                 <li>
-                    <a href="../../../php/systemadministrator/accounts/admin_account.php">
+                    <a href="/admin/adminaccounts">
                         <i class='bx bx-user'></i>
                         <span class="link_name">Account</span>
                     </a>
                     <span class="tooltip">Account</span>
                 </li>
                 <li>
-                    <a href="../../../php/systemadministrator/jobrequest/adminjobreq.php">
+                    <a href="/admin/adminjobrequests">
                         <i class='bx bx-clipboard'></i>
                         <span class="link_name">Job Request</span>
                     </a>
                     <span class="tooltip">Job Request</span>
                 </li>
                 <li>
-                    <a href="../../../php/systemadministrator/equipments/adminequipment.php">
+                    <a href="/admin/adminequipments">
                         <i class='bx bx-wrench'></i>
                         <span class="link_name">Equipment</span>
                     </a>
                     <span class="tooltip">Equipment</span>
                 </li>
                 <li>
-                    <a href="../../../php/systemadministrator/reservations/adminreservations.php">
+                    <a href="/admin/adminreservation">
                         <i class='bx bx-check-square'></i>
                         <span class="link_name">Reservation</span>
                     </a>

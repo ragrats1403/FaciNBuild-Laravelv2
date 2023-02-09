@@ -44,7 +44,7 @@ class UserController extends Controller
             {
                 //redirect to admin dashboard
                                     //test
-                return redirect('admin/adminaccounts');
+                return view('admin/adminaccounts');
             }
             else
             {
