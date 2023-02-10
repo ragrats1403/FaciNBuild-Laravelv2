@@ -10,7 +10,6 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/jq-3.6.0/dt-1.13.1/datatables.min.css" />
     <link rel="stylesheet" type="text/css" href="../css/sidebar.css">
     <link rel="stylesheet" type="text/css" href="../css/header.css">
-    <link rel="stylesheet" type="text/css" href="../css/admin/adminaccount.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="../css/body.css">    
     <link rel="stylesheet" type="text/css" href="../css/admin/adminreservation.css" />
@@ -91,14 +90,19 @@
             sidebar.classList.toggle("active");
         }
     </script>
-    <div class="h-100 d-flex justify-content-center align-items-center">
-        <div class="container">
+    <!--<div class="h-100 d-flex justify-content-center align-items-center">
+        <div class="container-fluid">
+            <div class="container">
 
+            </div>
         </div>
-    </div>
+    </div>-->
+
     <!-- Data Table Start-->
     <!-- <h1 class="text-center">Faci N Build Test table control</h1>-->
-    <!-- <div class="table1">
+    <!-- <div class="table1">-->
+
+        <div class="table1">
 
         <div class="container-fluid">
             <div class="row">
@@ -106,14 +110,14 @@
                     <div class="row">
                         <div class="col-md-2"></div>
                         <div class="col-md-8" style="background-color: #ccc; padding-left:50px; padding-top:50px; padding-right:50px;">
-                            <!-- padding-left:50px; padding-top:50px; padding-right:50px;
-                            <button type="button" class="btn btn-primary" style="margin-bottom:40px;" data-bs-toggle="modal" data-bs-target="#addUserModal">Add New Account</button>
+                                <h1>Reservation List</h1>
+                            <!-- padding-left:50px; padding-top:50px; padding-right:50px;-->
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-2"></div>
                         <div class="col-md-8" style="background-color: #ccc; padding-left:50px; padding-right:50px; padding-bottom:50px; ">
-                            <!-- padding-left:50px; padding-right:50px; padding-bottom:50px;
+                            <!-- padding-left:50px; padding-right:50px; padding-bottom:50px;-->
                             <table id="datatable" class="table">
                                 <thead>
                                     <th>ID</th>
@@ -134,7 +138,7 @@
                                     <td>131131231</td>
                                     <td>Mumbai</td>
                                     <td><a class="btn ">Edit</a><a href="">Delete</a></td>
-                                    
+                                    -->
 
                                     </tr>
                                 </tbody>
@@ -145,7 +149,7 @@
                 </div>
             </div>
         </div>
-    </div>-->
+    </div>
     <!-- Data Table End-->
 
     <!-- Optional JavaScript; choose one of the two! -->

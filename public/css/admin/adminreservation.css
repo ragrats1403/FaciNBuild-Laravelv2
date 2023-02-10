@@ -1,10 +1,12 @@
-.container{
+.table1{
     margin-top:100px;
-    height: 650px;
-    width: 2000px;
-    background: rgb(211, 211, 211);
-    color: #fff;
 }
 
+#footer {
+    border-top: solid 1px lightgray;
+    padding-bottom: 10px;
+}
 
-
+#footer p {
+    text-align: center;
+  }
