@@ -20,6 +20,7 @@ Route::get('/', function () {
 });
 */
 Route::get('/',[UserController::class, 'index']);
+//login auth
 Route::post('/auth', [UserController::class, 'authenticated'])->name('login.authenticated');
 //admin section start
 
@@ -35,11 +36,12 @@ Route::get('/admin/adminequipments', function () {
     return view('admin/adminequipments');
 });
 
-//admin section end
-
-//test route start
 Route::get('/admin/adminreservation', function () {
     return view('admin/adminreservation');
 });
+//admin section end
+
+//test route start
+
 //test route end
 
