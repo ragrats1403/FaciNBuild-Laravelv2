@@ -10,6 +10,11 @@ class AjaxDataController extends Controller
 
     protected function fetchdata()
     {
+
+    }
+    
+    protected function adddata()
+    {
         
     }
 }
