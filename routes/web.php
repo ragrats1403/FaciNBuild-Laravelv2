@@ -38,8 +38,8 @@ Route::get('/admin/adminequipments', function () {
 //admin section end
 
 //test route start
-Route::get('/admin/adminreservation', function () {
-    return view('admin/adminreservation');
+Route::get('/admin/adminreservationlist', function () {
+    return view('admin/adminreservationlist');
 });
 //test route end
 
