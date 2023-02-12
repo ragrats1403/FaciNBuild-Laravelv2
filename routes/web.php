@@ -35,6 +35,14 @@ Route::get('/admin/adminequipments', function () {
     return view('admin/adminequipments');
 });
 
+Route::get('/admin/adminmajorjobrequests', function () {
+    return view('admin/adminmajorjobrequests');
+});
+
+Route::get('/admin/adminminorjobrequests', function () {
+    return view('admin/adminminorjobrequests');
+});
+
 //admin section end
 
 //test route start

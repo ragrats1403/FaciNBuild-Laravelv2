@@ -89,12 +89,5 @@
         }
     </script>
 
-<div class="adminjobreqform">
-    <ul class="adminjobreqtableall">
-        <p><em>Please choose an options.</em></p>
-        <li><a class="jobreqlink" href="/admin/adminmajorjobrequests">MAJOR JOB REQUESTS</a></li>
-        <li><a class="jobreqlink" href="/admin/adminminorjobrequests">MINOR JOB REQUESTS</a></li>
-    </ul>
 </body>
-
 </html>
