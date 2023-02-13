@@ -51,3 +51,19 @@ Route::get('/admin/adminreservationlist', function () {
 });
 //test route end
 
+//building section start
+
+Route::get('/building/bmjobrequestlist', function () {
+    return view('building/bmjobrequestlist');
+});
+
+Route::get('/building/bmmajorjob', function () {
+    return view('building/bmmajorjob');
+});
+
+Route::get('/building/bmminorjob', function () {
+    return view('building/bmminorjob');
+});
+
+
+//building section end
