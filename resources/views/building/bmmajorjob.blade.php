@@ -26,8 +26,8 @@
     </div>
 </header>
 
-<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
-    <div class="sidebar" id="myScrollspy">
+<body>
+    <div class="sidebar">
         <div class="logo_content">
             <div class="logo">
                 <img src="../../../images/Brown_logo_faci.png" />
@@ -102,78 +102,85 @@
     <!-- <h1 class="text-center">Faci N Build Test table control</h1>-->
     <!-- <div class="table1">-->
 
-        <div class="table1">
+    <div class="table1">
 
-        <div class="container-fluid">
+<div class="container-fluid">
+    <div class="row">
+        <div class="container">
             <div class="row">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-2"></div>
-                        <div class="col-md-8 " style="background-color: #fff4c4; padding-left:50px; padding-top:50px; padding-right:50px;">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 " style="background-color: #fff4c4; padding-left:50px; padding-top:50px; padding-right:50px;">
 
-                            <div class="row justify-content-center" style="padding-bottom:10px;">
-                                <h1 class="text-center text-uppercase fw-bold" style="padding-bottom:10px;">Minor Job Request form</h1>
-                                <div class="col-md-6 ">
-                                    <input type="name" class="form-control input-sm col-xs-1" id="Namemajorjr" placeholder="Name">
-                                </div>
-                                <div class="col-md-6 ">
-                                    <input type="name" class="form-control input-sm col-xs-1" id="numbermajorjr" placeholder="No.">
-                                </div>
-                            </div>
-                            <div class="row justify-content-center" style="padding-bottom:13px;">
-                                <div class="col-md-6 ">
-                                    <input type="name" class="form-control input-sm col-xs-1" id="departmentmajorjr" placeholder="Department">
-                                </div>
-                                <div class="col-md-6 ">
-                                    <input type="name" class="form-control input-sm col-xs-1" id="datemajorjr" placeholder="Date">
-                                </div>
-                            </div>
-                            <div class="justify-content-center" style="padding-bottom:10px;">
-                                <h5 class="text-uppercase fw-bold" style="padding-bottom:10px;" >A. Requisition(To be filled up by the requesting party)</h5>
-                                <div class="col-md-2 ">
-                                    <input type="name" class="form-control input-sm col-xs-1" id="departmentmajorjr" placeholder="Quantity">
-                                </div>
-                            </div>
-                            <div class="justify-content-center" style="padding-bottom:10px;">
-                                <h5 class="text-uppercase fw-bold" style="padding-bottom:10px;" >ITEM WITH COMPLETE DESCRIPTION</h5>
-                                <div class="col-md-12" >
-                                    <textarea placeholder="Description" class="form-control" rows="2" id="description"></textarea>
-                                </div>
-                            </div>
-                            <div class="justify-content-center" style="padding-bottom:10px;">
-                                <div class="col-md-12" >
-                                    <textarea placeholder="Purpose" class="form-control" rows="2" id="purpose"></textarea>
-                                </div>
-                            </div>
-                            
-                            <div class="row justify-content-center" style="padding-bottom:10px;">
-                                <div class="col-md-6" >
-                                    <label class="fw-bold" for="renderedby">Rendered by:</label>
-                                    <input type="name" class="form-control input-sm col-xs-1" id="departmentmajorjr">
-                                </div>
-                                <div class="col-md-6" >
-                                    <label class="fw-bold" for="date">Date:</label>
-                                    <input type="date" class="form-control input-sm col-xs-1" id="departmentmajorjr">
-                                </div>
-                            </div>
-                            <div class="row justify-content-center" style="padding-bottom:10px;">
-                                <div class="col-md-6" >
-                                    <label class="fw-bold" for="renderedby">Confirmed by:</label>
-                                    <input type="name" class="form-control input-sm col-xs-1" id="departmentmajorjr">
-                                </div>
-                                <div class="col-md-6" >
-                                    <label class="fw-bold" for="date">Date:</label>
-                                    <input type="date" class="form-control input-sm col-xs-1" id="departmentmajorjr">
-                                </div>
-                            </div>
-
+                    <div class="row justify-content-center" style="padding-bottom:10px;">
+                        <h1 class="text-center text-uppercase fw-bold" style="padding-bottom:10px;">Major Job Request form</h1>
+                        <div class="col-md-6 ">
+                            <input type="name" class="form-control input-sm col-xs-1" id="Namemajorjr" placeholder="Job request no.">
                         </div>
+                        <div class="col-md-6 ">
+                            <input type="name" class="form-control input-sm col-xs-1" id="numbermajorjr" placeholder="Requisition no.">
                         </div>
                     </div>
+                    <div class="row justify-content-center" style="padding-bottom:13px;">
+                        <div class="col-md-6 ">
+                            <input type="name" class="form-control input-sm col-xs-1" id="departmentmajorjr" placeholder="Department">
+                        </div>
+                        <div class="col-md-6 ">
+                            <input type="name" class="form-control input-sm col-xs-1" id="datemajorjr" placeholder="Date">
+                        </div>
+                    </div>
+                    <div class="justify-content-center" style="padding-bottom:10px;">
+                        <h5 class="text-uppercase fw-bold" style="padding-bottom:10px;" >A. Requisition(To be filled up by the requesting party)</h5>
+                        <div class="col-md-2 ">
+                            <input type="name" class="form-control input-sm col-xs-1" id="departmentmajorjr" placeholder="Quantity">
+                        </div>
+                    </div>
+                    <div class="row justify-content-center" style="padding-bottom:10px;">
+                        <h5 class="text-uppercase fw-bold" style="padding-bottom:10px;" >ITEM WITH COMPLETE DESCRIPTION</h5>
+                        <div class="col-md-10" >
+                            <textarea placeholder="Description" class="form-control" rows="2" id="description"></textarea>
+                        </div>
+                        <div class="col-md-2 ">
+                        <button class="text-secondary btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"  aria-haspopup="true" aria-expanded="false" style="background-color: #fff;">Dropdown button </button>
+                        </div>
+                    </div>
+
+                    <div class="justify-content-center" style="padding-bottom:10px;">
+                        <div class="col-md-12" >
+                            <textarea placeholder="Purpose" class="form-control" rows="2" id="purpose"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="row justify-content-center" style="padding-bottom:10px;">
+                        <div class="col-md-6" >
+                            <label class="fw-bold" for="renderedby">Requested by</label>
+                            <input type="name" class="form-control input-sm col-xs-1" id="departmentmajorjr">
+                        </div>
+                        <div class="col-md-6" >
+                            <label class="fw-bold" for="date">Approved by</label>
+                            <input type="date" class="form-control input-sm col-xs-1" id="departmentmajorjr">
+                        </div>
+                    </div>
+                    <div class=" row justify-content-center" style="padding-bottom:10px;">
+                        <div class="col-md-6" style="padding-bottom:10px;" >
+                            <label class="fw-bold" for="renderedby">Department Head</label>
+                            <input type="name" class="form-control input-sm col-xs-1" id="departmentmajorjr">
+                        </div>
+                        <div class="col-md-6" >
+                            <label class="fw-bold" for="date">Noted By</label>
+                            <input type="name" class="form-control input-sm col-xs-1" id="departmentmajorjr">
+                        </div>
+                        <div class="col-md-7" style="background-color: #fff4c4;">
+                        </div>
+                        <label class="fw-bold" style="padding-left:825px;" for="renderedby">PROPERTY CUSTODIAN</label>
+                    </div>
+
+                </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+</div>
     <!-- Data Table End-->
 
     <!-- Optional JavaScript; choose one of the two! -->
