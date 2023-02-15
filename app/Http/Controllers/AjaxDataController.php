@@ -40,7 +40,7 @@ class AjaxDataController extends Controller
     {
         $accounts = DB::select('select * from users');
       
-        /*$data = array();
+        $data = array();
         foreach($accounts as $user)
         {
             $subarray = array();
@@ -59,7 +59,7 @@ class AjaxDataController extends Controller
             'data'=>$data,
             'draw'=> intval($request->draw),
             'recordsTotal' => $count,
-        );*/
+        );
         return Datatables::of($accounts)
             ->addColumn('action', function($account)
             {
