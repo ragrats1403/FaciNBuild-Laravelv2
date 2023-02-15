@@ -19,8 +19,11 @@ Route::get('/', function () {
     return view('login');
 });
 */
+//controller routes
 Route::get('/',[UserController::class, 'index']);
 Route::post('/auth', [UserController::class, 'authenticated'])->name('login.authenticated');
+Route::post('ajaxdata/getdata', [AjaxDataController::class, 'getdata'])->name('adminaccounts.getdata');
+
 //admin section start
 
 Route::get('/admin/adminjobrequests', function () {

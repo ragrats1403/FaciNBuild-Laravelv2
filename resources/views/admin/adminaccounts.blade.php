@@ -1,3 +1,7 @@
+@php
+    //include('../../php/admin/adminaccount/fetch_data.php');
+    //include_once(public_path() . '/php/admin/adminaccount/fetch_data.php');
+@endphp
 <!DOCTYPE html>
 <html lang="en">
 
@@ -156,10 +160,15 @@
             'paging': true,
             'order': [],
             'ajax': {
-                'url': 'fetch_data.php',
+                'url': '{{route('adminaccounts.getdata')}}',
                 'type': 'post',
 
             },
+            "columns":[
+            { "data": "first_name" },
+            { "data": "last_name" },
+            { "data": "action", orderable:false, searchable: false}
+            ],
             'fnCreatedRow': function(nRow, aData, iDataIndex) {
                 $(nRow).attr('id', aData[0]);
             },
@@ -426,3 +435,4 @@
 </body>
 
 </html>
+
