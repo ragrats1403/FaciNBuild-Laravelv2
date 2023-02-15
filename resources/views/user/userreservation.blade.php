@@ -36,7 +36,7 @@
             <ul class="nav_list">
                 <li>
                     <a href="/user/usernotifications">
-                        <i class='bx bx-user'></i>
+                        <i class='bx bx-bell'></i>
                         <span class="link_name">Notifications</span>
                     </a>
                     <span class="tooltip">Notifications</span>
@@ -50,7 +50,7 @@
                 </li>
                 <li>
                     <a href="/user/userreservation">
-                        <i class='bx bx-check-square'></i>
+                        <i class='bx bx-mail-send' ></i>
                         <span class="link_name">Reservation</span>
                     </a>
                     <span class="tooltip">Reservation</span>
