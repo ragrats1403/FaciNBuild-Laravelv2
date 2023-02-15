@@ -80,4 +80,8 @@ Route::get('/user/userreservation', function () {
     return view('/user/userreservation');
 });
 
+Route::get('/user/usernotifications', function () {
+    return view('/user/usernotifications');
+});
+
 //user section end
