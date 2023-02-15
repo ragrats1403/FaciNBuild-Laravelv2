@@ -70,3 +70,14 @@ Route::get('/building/bmminorjob', function () {
 
 
 //building section end
+
+//user section start
+Route::get('/user/userdashboard', function () {
+    return view('/user/userdashboard');
+});
+
+Route::get('/user/userreservation', function () {
+    return view('/user/userreservation');
+});
+
+//user section end
